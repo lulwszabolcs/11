@@ -12,6 +12,8 @@ for (let i = 1; i <= 10; i++) {
     document.write(`<p>${i} * 8 = ${i*8}</p>`)
 }
 */
-for (let i = 2020; i <= 2200; i+=4) {
-    document.write(`<p>${i} ${i < 2022 ? "Szökőév volt " : "Szökőév lesz"}</p>`)
+for (let i = 2020; i <= 2200; i++) {
+    if (i%4 == 0 && (i % 400 == 0 || i % 100 != 0)) {
+        document.write(`<p>${i < 2022 ? "Szökőév volt:"  : "Szökőév lesz: "} ${i}</p>`)
+    }
 }
