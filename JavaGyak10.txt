@@ -1,0 +1,15 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        String nev = "Nagy Szabolcs";
+        //2 System.out.println(nev.isBlank());
+        //3System.out.println("Hello" + " " + nev);
+        //3System.out.println(nev.concat("Hello");
+        //4System.out.println(nev.contains("A"));
+        //5System.out.println(nev.endsWith("id") | nev.endsWith("or"));
+        String nagy = nev.toUpperCase();
+        System.out.println(nagy.charAt(nagy.length()-2));
+        System.out.println(nev.replace("A","Aa"));
+        System.out.println(nev.charAt(nev.length()/2));
+        System.out.println(nev.contains("d") ? "d karakter talalhato" : "nem talalhato");
+    }
+}
