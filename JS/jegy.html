@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jegy.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+          <th>Típús</th>
+          <th>Ár (Állójegy)</th>
+          <th>Ár (Ülőjegy)</th>
+        </tr>
+        <tr>
+          <td>Diák</td>
+          <td>500Ft</td>
+          <td>750Ft</td>
+        </tr>
+        <tr>
+          <td>Felnőtt</td>
+          <td>1000Ft</td>
+          <td>1250Ft</td>
+        </tr>
+      </table>
+    <div id="egesz">
+<div>
+    <label for="felnott">Felnőtt jegy:</label>
+    <br>
+    <input type="number" name="felnott" id="felnott">
+</div>
+<div>
+    <label for="diak">Diák jegy:</label>
+    <br>
+    <input type="number" name="diak" id="diak">
+</div>
+<div>
+    <label for="jegyfajta">Álló</label>
+    <input type="radio" name="jegyfajta" id="allo">
+    <label for="jegyfajta">Ülő</label>
+    <input type="radio" name="jegyfajta" id="ulo">
+</div>
+<button type="submit" onclick="arLekeres()">Árlekérés</button>
+<p><span id="ide"></span></p>
+</div>
+<script src="jegy.js"></script>
+</body>
+</html>

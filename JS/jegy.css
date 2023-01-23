@@ -1,0 +1,9 @@
+#egesz {
+    position: absolute;
+    right: 7%;
+}
+
+table, th, td {
+    border: 2px black solid;
+    border-collapse: collapse;
+}
