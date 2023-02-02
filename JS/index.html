@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menusor">
+        <nav>
+            <ul>
+                <li><a href="https://www.w3schools.com/java/default.asp" target="_blank">Java tananyag</a></li>
+                <li><a href="./gyakorlo.html"></a>Gyakorló feladatok</li>
+                <li><a href="./ellenorzo.html" target="_blank">Ellenörző feladatsorok</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Java filebol beolvasás</h1>
+    <code>
+        <pre>
+        public class txtbeolvasas { 
+            public static List<String> nevek;
+            public static void main(String[] args) { 
+                getData();
+                System.out.println(nevek);
+            } 
+            public static void <span id="feladat1">???</span>() {
+                try {
+                    nevek = Files.readAllLines(Paths.get("nevek.txt"), Charset.defaultCharset());
+                    //nevek = Files.readAllLines(Paths.get("nevek.txt"), Charset.forName("UTF-8"));
+                } catch (IOException e) {
+                    System.out.println("Hiba");
+                }
+            }
+        
+        }</pre>
+    </code>
+    <p>??? helyére:</p>
+    <label for="f1">Válasz: </label>
+    <input type="text" name="f1" id="f1">
+    <button type="submit" onclick="megoldas1()">1. feladat megoldasa</button>
+    <button id="btn2">1. feladat megoldasa másképp</button>
+    <h2>2. feladat</h2>
+    <p>A fenti kód csak az első sort olvassa ve a txt-ből?</p>
+    <div>
+    <input type="radio" name="igaz" id="igaz">
+    <label for="igaz">Igaz</label>
+</div>
+<div>
+    <input type="radio" name="hamis" id="hamis"> 
+    <label for="hamis">Hamis</label> <br>
+</div>
+<div>
+    <button id="btn3">Megoldás</button>
+</div>
+<div>
+    <p id="f2kiir"></p>
+</div>
+<div class="feladat3">
+    <h2>3. feladat</h2>
+    <p>Melyik nem programozási nyelv?</p>
+    <select name="prog" id="prog">
+        <option>----Válassz----</option>
+        <option value="java">Java</option>
+        <option value="html">HTML</option>
+        <option value="python">Python</option>
+        <option value="c#">C#</option>
+    </select>
+    <div>
+        <button id="btn4">Lássuk jól választottál-e</button>
+    </div>
+    <div>
+        <p id="f3kiir"></p>
+    </div>
+</div>
+<script src="bozo.js"></script>
+</body>
+</html> 
