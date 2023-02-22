@@ -75,14 +75,14 @@ public class TicTacToe {
                 tabla[1][2] = 'O';
             } else if (((tabla[0][0] == 'X' && tabla[1][0] == 'X' ||
                     tabla[2][1] == 'X' && tabla[2][2] == 'X' ||
-                    tabla[0][2] == 'X' && tabla[1][1] == 'X') && tabla[2][0] == '-') {
+                    tabla[0][2] == 'X' && tabla[1][1] == 'X')) && tabla[2][0] == '-') {
                 tabla[2][0] = 'O';
-            } else if ((tabla[0][1] == 'X' && tabla[1][1] == 'X' ||
-                    tabla[2][0] == 'X' && tabla[2][2] == 'X') && tabla[2][1] == '-') {
+            } else if (((tabla[0][1] == 'X' && tabla[1][1] == 'X' ||
+                    tabla[2][0] == 'X' && tabla[2][2] == 'X')) && tabla[2][1] == '-') {
                 tabla[2][1] = 'O';
-            } else if ((tabla[0][2] == 'X' && tabla[1][2] == 'X' ||
+            } else if (((tabla[0][2] == 'X' && tabla[1][2] == 'X' ||
                     tabla[2][0] == 'X' && tabla[2][1] == 'X' ||
-                    tabla[0][0] == 'X' && tabla[1][1] == 'X') && tabla[2][2] == '-') {
+                    tabla[0][0] == 'X' && tabla[1][1] == 'X')) && tabla[2][2] == '-') {
                 tabla[2][2] = 'O';
             } else {
                 tabla[(int) (Math.random() * 3)][(int) (Math.random() * 3)] = 'O';
